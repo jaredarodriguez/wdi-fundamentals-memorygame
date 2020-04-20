@@ -29,7 +29,6 @@ var checkForMatch = function(){
 
 var flipCard = function (){
 	var card = cards[this.getAttribute('data-id')];
-	console.log("User flipped " + card.rank + card.cardImage + card.suit);
 	cardsInPlay.push(card.rank);
 	this.setAttribute("src", card.cardImage)
 	if (cardsInPlay.length === 2) {
@@ -49,29 +48,3 @@ var createBoard = function () {
 }
 
 createBoard ();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
